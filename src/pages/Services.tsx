@@ -71,13 +71,13 @@ const Services = () => {
       <section className="pt-32 pb-20 bg-gradient-to-b from-secondary to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block text-spiritual-yellow font-medium text-sm uppercase tracking-widest mb-4">
+            <span className="inline-block text-primary font-medium text-sm uppercase tracking-widest mb-4">
               Our Services
             </span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Seva with Devotion
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-spiritual-yellow via-spiritual-red to-spiritual-yellow mx-auto rounded-full mb-8" />
+            <div className="w-24 h-1 bg-gradient-to-r from-primary via-spiritual-green to-primary mx-auto rounded-full mb-8" />
             <p className="text-lg text-muted-foreground leading-relaxed">
               At Vindravan Shri Giriraj Sewa Sadan Trust, we offer more than just accommodation. 
               We provide a complete spiritual hospitality experience — from comfortable rooms 
@@ -109,7 +109,7 @@ const Services = () => {
       <section className="section-padding bg-background">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <span className="inline-block text-spiritual-yellow font-medium text-sm uppercase tracking-widest mb-4">
+            <span className="inline-block text-spiritual-green font-medium text-sm uppercase tracking-widest mb-4">
               What We Offer
             </span>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -124,7 +124,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-secondary/50 p-6 rounded-2xl card-hover group border border-transparent hover:border-spiritual-yellow/20 hover:bg-secondary"
+                className="bg-secondary/50 p-6 rounded-2xl card-hover group border border-transparent hover:border-primary/20 hover:bg-secondary"
               >
                 {/* Icon */}
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
@@ -161,8 +161,8 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-background p-8 md:p-12 rounded-2xl shadow-lg border border-border/50">
             <div className="flex items-start gap-6">
-              <div className="hidden md:flex w-16 h-16 rounded-xl bg-gradient-to-br from-spiritual-yellow/20 to-spiritual-yellow/5 items-center justify-center flex-shrink-0">
-                <Sparkles className="w-8 h-8 text-spiritual-yellow" />
+              <div className="hidden md:flex w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 items-center justify-center flex-shrink-0">
+                <Sparkles className="w-8 h-8 text-primary" />
               </div>
               <div>
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-4">
@@ -184,17 +184,26 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center text-primary-foreground">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-              Need More Information?
+      {/* CTA Section - Booking CTAs */}
+      <section className="py-20 bg-primary relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-primary-foreground">
+            {/* Heading */}
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              Ready for Your Spiritual Journey?
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-10 leading-relaxed">
-              Connect with us to learn more about our trust services or to make a booking 
-              for your spiritual journey to Vrindavan.
+            <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+              Book your stay at Vindravan Shri Giriraj Sewa Sadan and experience 
+              divine hospitality in the heart of Vrindavan.
             </p>
+
+            {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`https://wa.me/919809802980?text=${whatsappMessage}`}
@@ -203,21 +212,50 @@ const Services = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 w-full sm:w-auto shadow-lg"
+                  className="bg-spiritual-green text-white hover:bg-spiritual-green/90 text-lg px-8 py-6 w-full sm:w-auto"
                 >
-                  WhatsApp Us
+                  WhatsApp Booking
                 </Button>
               </a>
               <a href="tel:+919809802980">
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 w-full sm:w-auto bg-transparent"
+                  className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 w-full sm:w-auto"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
                 </Button>
               </a>
+              <a href="mailto:contact@girirajsewasadan.com">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 w-full sm:w-auto bg-transparent"
+                >
+                  Email Us
+                </Button>
+              </a>
+            </div>
+
+            {/* Contact Info */}
+            <div className="mt-10 pt-10 border-t border-primary-foreground/20">
+              <p className="text-primary-foreground/70 mb-4">Or reach us directly:</p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a
+                  href="tel:+919809802980"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <Phone size={18} />
+                  <span>+91 98098 02980</span>
+                </a>
+                <a
+                  href="tel:+918955807505"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <Phone size={18} />
+                  <span>+91 89558 07505</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

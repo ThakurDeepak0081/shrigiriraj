@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
-import { Phone, Users, Wind, Snowflake } from 'lucide-react';
+import { Phone, Users, Wind, Snowflake, MessageCircle, Mail } from 'lucide-react';
 
 type RoomCategory = 'all' | 'non-ac' | 'ac' | 'multi';
 
@@ -125,13 +125,13 @@ const Gallery = () => {
       <section className="pt-32 pb-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block text-spiritual-green font-medium text-sm uppercase tracking-wider mb-3">
+            <span className="inline-block text-primary font-medium text-sm uppercase tracking-wider mb-3">
               Our Rooms
             </span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Room Gallery
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-spiritual-green via-spiritual-yellow to-spiritual-green mx-auto rounded-full mb-6" />
+            <div className="w-24 h-1 bg-gradient-to-r from-primary via-spiritual-green to-primary mx-auto rounded-full mb-6" />
             <p className="text-lg text-muted-foreground">
               Browse our selection of comfortable rooms designed to make your 
               spiritual stay in Vrindavan peaceful and rejuvenating.
@@ -237,7 +237,7 @@ const Gallery = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:+919809802980">
-                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto">
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto">
                   <Phone className="w-5 h-5 mr-2" />
                   +91 98098 02980
                 </Button>
@@ -246,6 +246,51 @@ const Gallery = () => {
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
                   <Phone className="w-5 h-5 mr-2" />
                   +91 89558 07505
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section - Need More Information */}
+      <section className="py-20 bg-primary relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center text-primary-foreground">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
+              Need More Information?
+            </h2>
+            <p className="text-lg text-primary-foreground/80 mb-10 leading-relaxed">
+              Connect with us to learn more about our trust services or to make a booking 
+              for your spiritual journey to Vrindavan.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href={`https://wa.me/919809802980?text=${encodeURIComponent("Jai Shri Krishna! I would like to know more about booking a room at Vindravan Shri Giriraj Sewa Sadan Trust.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  className="bg-spiritual-green text-white hover:bg-spiritual-green/90 text-lg px-8 py-6 w-full sm:w-auto shadow-lg"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp Us
+                </Button>
+              </a>
+              <a href="tel:+919809802980">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 w-full sm:w-auto"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call Now
                 </Button>
               </a>
             </div>
