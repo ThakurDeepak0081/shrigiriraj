@@ -1,99 +1,137 @@
-import { Heart, BookOpen, Users, Star, Sparkles } from 'lucide-react';
+import { Heart, MapPin, Users, HandHeart, Sparkles, Home } from 'lucide-react';
 
 const AboutSection = () => {
   return (
     <section className="section-padding bg-background">
       <div className="container mx-auto">
+        {/* Section Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          {/* Section Title */}
           <span className="inline-block text-spiritual-yellow font-medium text-sm uppercase tracking-widest mb-4">
-            About Us
+            About Our Trust
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Welcome to Our Spiritual Abode
+            A Home Away From Home for Every Pilgrim
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-spiritual-yellow via-spiritual-red to-spiritual-yellow mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-spiritual-yellow via-spiritual-red to-spiritual-yellow mx-auto rounded-full mb-8" />
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            We believe every devotee deserves a peaceful, affordable place to stay while 
+            visiting the sacred land of Vrindavan — without worrying about comfort or cost.
+          </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
+        {/* Main Content Grid */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left - Story & Problem We Solve */}
           <div className="space-y-8">
+            {/* The Problem We Solve */}
             <div className="relative">
-              <Sparkles className="absolute -left-8 -top-4 w-6 h-6 text-spiritual-yellow/50" />
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                <span className="font-serif text-2xl text-foreground font-semibold block mb-3">
-                  Vindravan Shri Giriraj Sewa Sadan
-                </span> 
-                is a registered charitable trust organization dedicated to serving devotees 
-                in the holy city of Vrindavan. Located just 600 meters from the magnificent 
-                Prem Mandir, our trust provides pilgrims and spiritual seekers a peaceful 
-                retreat during their divine journey.
+              <Sparkles className="absolute -left-8 -top-4 w-6 h-6 text-spiritual-yellow/50 hidden lg:block" />
+              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
+                The Challenge Pilgrims Face
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Every year, thousands of devotees travel to Vrindavan seeking spiritual peace 
+                and divine blessings. But many struggle to find <strong className="text-foreground">clean, 
+                safe, and affordable accommodation</strong> — especially families, elderly pilgrims, 
+                and those on tight budgets.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Commercial hotels often charge high prices, while cheaper options lack basic 
+                amenities. This forces devotees to worry about logistics instead of focusing 
+                on their spiritual journey.
               </p>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
-              Founded with the vision of selfless service (seva), we understand the 
-              spiritual significance of Vrindavan and strive to provide an environment that 
-              nurtures your soul while ensuring physical comfort. Our trust operates round 
-              the clock to serve devotees with love and devotion.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Whether you're here for darshan at the sacred temples, seeking spiritual solace, 
-              or exploring the mystical lanes of Vrindavan, we welcome you with open hearts 
-              and the warmth of true Indian hospitality — all in the spirit of charitable service.
-            </p>
+
+            {/* Our Solution */}
+            <div>
+              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
+                How We Help
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                <strong className="text-foreground">Vindravan Shri Giriraj Sewa Sadan</strong> is 
+                a registered charitable trust that provides comfortable rooms, fresh satvik meals, 
+                and round-the-clock support — all at subsidized rates that every pilgrim can afford.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Located just <strong className="text-foreground">600 meters from Prem Mandir</strong>, 
+                we take care of your stay so you can focus entirely on darshan, prayer, and 
+                spiritual growth.
+              </p>
+            </div>
             
-            {/* Trust Highlight */}
+            {/* Trust Commitment */}
             <div className="bg-gradient-to-r from-spiritual-yellow/10 to-transparent p-6 rounded-xl border-l-4 border-spiritual-yellow">
               <p className="text-foreground font-medium italic">
-                "As a trust organization, we are committed to serving humanity through 
-                accommodation, food, and spiritual guidance — embodying the essence of seva."
+                "We don't run a business — we perform seva. Every rupee goes back into 
+                serving more devotees and maintaining our facilities."
               </p>
             </div>
           </div>
 
-          {/* Right - Values Cards */}
-          <div className="grid grid-cols-2 gap-5">
-            <div className="bg-secondary p-6 rounded-2xl card-hover group border border-transparent hover:border-spiritual-yellow/30">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-spiritual-yellow/20 to-spiritual-yellow/5 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                <Heart className="w-7 h-7 text-spiritual-yellow" />
+          {/* Right - Who We Serve & Values */}
+          <div className="space-y-6">
+            {/* Who We Serve */}
+            <div className="bg-secondary p-6 rounded-2xl border border-transparent hover:border-spiritual-yellow/30 transition-colors">
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-spiritual-yellow/20 to-spiritual-yellow/5 flex items-center justify-center mb-5">
+                <Users className="w-7 h-7 text-spiritual-yellow" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Who We Serve</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-spiritual-green mt-2 flex-shrink-0" />
+                  <span>Families visiting Vrindavan for darshan and festivals</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-spiritual-green mt-2 flex-shrink-0" />
+                  <span>Elderly pilgrims needing comfortable, accessible stays</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-spiritual-green mt-2 flex-shrink-0" />
+                  <span>Solo devotees seeking peaceful spiritual retreat</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-spiritual-green mt-2 flex-shrink-0" />
+                  <span>Groups from temples and organizations across India</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* What Makes Us Different */}
+            <div className="bg-secondary p-6 rounded-2xl border border-transparent hover:border-spiritual-green/30 transition-colors">
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-spiritual-green/20 to-spiritual-green/5 flex items-center justify-center mb-5">
+                <Heart className="w-7 h-7 text-spiritual-green" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">What Makes Us Different</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-spiritual-yellow mt-2 flex-shrink-0" />
+                  <span><strong className="text-foreground">Non-profit trust</strong> — not a commercial hotel</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-spiritual-yellow mt-2 flex-shrink-0" />
+                  <span><strong className="text-foreground">Subsidized rates</strong> accessible to all budgets</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-spiritual-yellow mt-2 flex-shrink-0" />
+                  <span><strong className="text-foreground">Fresh satvik meals</strong> prepared with devotion</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-spiritual-yellow mt-2 flex-shrink-0" />
+                  <span><strong className="text-foreground">24/7 staff</strong> for early darshan & late arrivals</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Our Mission */}
+            <div className="bg-secondary p-6 rounded-2xl border border-transparent hover:border-primary/30 transition-colors">
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-5">
+                <HandHeart className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Our Mission</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                To serve devotees selflessly, providing comfortable accommodation and nourishing 
-                meals for their spiritual journey.
-              </p>
-            </div>
-
-            <div className="bg-secondary p-6 rounded-2xl card-hover group border border-transparent hover:border-spiritual-green/30">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-spiritual-green/20 to-spiritual-green/5 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                <BookOpen className="w-7 h-7 text-spiritual-green" />
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Our Values</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Devotion, service, cleanliness, and respect for all guests who visit our 
-                sacred charitable abode.
-              </p>
-            </div>
-
-            <div className="bg-secondary p-6 rounded-2xl card-hover group border border-transparent hover:border-spiritual-red/30">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-spiritual-red/20 to-spiritual-red/5 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                <Star className="w-7 h-7 text-spiritual-red" />
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Our Inspiration</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Inspired by the divine teachings of Lord Krishna and the eternal love 
-                of Radha Rani.
-              </p>
-            </div>
-
-            <div className="bg-secondary p-6 rounded-2xl card-hover group border border-transparent hover:border-primary/30">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                <Users className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Our Promise</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                24/7 dedicated service ensuring your stay is as peaceful as the 
-                land of Vrindavan itself.
+                To serve every devotee who comes to Vrindavan with love, respect, and care — 
+                ensuring that no pilgrim ever has to compromise their spiritual journey due 
+                to lack of affordable, dignified accommodation.
               </p>
             </div>
           </div>
