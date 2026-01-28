@@ -27,8 +27,8 @@
     --muted: 45 20% 96%;
     --muted-foreground: 220 15% 45%;
 
-    /* Warm Yellow - Devotion accent */
-    --accent: 45 100% 51%;
+    /* Warm Gold - Subtle devotion accent */
+    --accent: 38 70% 50%;
     --accent-foreground: 222 47% 11%;
 
     /* Spiritual Red - Energy */
@@ -39,9 +39,9 @@
     --spiritual-green: 142 50% 40%;
     --spiritual-green-foreground: 0 0% 100%;
 
-    /* Warm Yellow */
-    --spiritual-yellow: 45 100% 51%;
-    --spiritual-yellow-foreground: 222 47% 11%;
+    /* Warm Gold - Muted */
+    --spiritual-yellow: 38 55% 45%;
+    --spiritual-yellow-foreground: 0 0% 100%;
 
     /* Spiritual Red */
     --spiritual-red: 0 72% 51%;
@@ -82,7 +82,7 @@
     --muted: 220 30% 15%;
     --muted-foreground: 220 15% 65%;
 
-    --accent: 45 100% 51%;
+    --accent: 38 70% 55%;
     --accent-foreground: 222 47% 11%;
 
     --destructive: 0 62.8% 30.6%;
@@ -91,8 +91,8 @@
     --spiritual-green: 142 50% 45%;
     --spiritual-green-foreground: 0 0% 100%;
 
-    --spiritual-yellow: 45 100% 55%;
-    --spiritual-yellow-foreground: 222 47% 11%;
+    --spiritual-yellow: 38 55% 50%;
+    --spiritual-yellow-foreground: 0 0% 100%;
 
     --spiritual-red: 0 72% 55%;
     --spiritual-red-foreground: 0 0% 100%;

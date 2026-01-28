@@ -5,7 +5,6 @@ import WhyChooseUs from '@/components/home/WhyChooseUs';
 import EnjoyYourStay from '@/components/home/EnjoyYourStay';
 import Testimonials from '@/components/home/Testimonials';
 import NearbyPlaces from '@/components/home/NearbyPlaces';
-import EnquiryCTA from '@/components/home/EnquiryCTA';
 
 const Index = () => {
   return (
@@ -16,7 +15,6 @@ const Index = () => {
       <EnjoyYourStay />
       <Testimonials />
       <NearbyPlaces />
-      <EnquiryCTA />
     </Layout>
   );
 };
