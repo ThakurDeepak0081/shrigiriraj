@@ -15,8 +15,8 @@ const Footer = () => {
                 <span className="text-2xl">🙏</span>
               </div>
               <div>
-                <h3 className="font-serif text-lg font-bold">Vindravan Shri Giriraj</h3>
-                <p className="text-sm text-primary-foreground/80">Sewa Sadan</p>
+                <h3 className="font-serif text-lg font-bold">Shree Giriraj Sewa Sadan</h3>
+                <p className="text-sm text-primary-foreground/80">Seva with Devotion</p>
               </div>
             </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
@@ -60,25 +60,32 @@ const Footer = () => {
             <h4 className="font-serif text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3">
               <a
-                href="tel:+919809802980"
+                href="tel:+919927600017"
                 className="flex items-start gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors"
               >
                 <Phone size={16} className="mt-0.5 flex-shrink-0" />
-                <span>+91 98098 02980</span>
+                <span>+91 99276 00017</span>
               </a>
               <a
-                href="tel:+918955807505"
+                href="tel:+919927600019"
                 className="flex items-start gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors"
               >
                 <Phone size={16} className="mt-0.5 flex-shrink-0" />
-                <span>+91 89558 07505</span>
+                <span>+91 99276 00019</span>
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="tel:+919927600029"
+                className="flex items-start gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors"
+              >
+                <Phone size={16} className="mt-0.5 flex-shrink-0" />
+                <span>+91 99276 00029</span>
+              </a>
+              <a
+                href="mailto:girirajsewasadan@gmail.com"
                 className="flex items-start gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors"
               >
                 <Mail size={16} className="mt-0.5 flex-shrink-0" />
-                <span>contact@girirajsewasadan.com</span>
+                <span>girirajsewasadan@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-sm text-primary-foreground/80">
                 <Clock size={16} className="mt-0.5 flex-shrink-0" />
@@ -87,20 +94,30 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Address */}
+          {/* Vrindavan Address */}
           <div className="space-y-4">
-            <h4 className="font-serif text-lg font-semibold">Our Location</h4>
+            <h4 className="font-serif text-lg font-semibold">Vrindavan Location</h4>
             <div className="flex items-start gap-3 text-sm text-primary-foreground/80">
               <MapPin size={16} className="mt-0.5 flex-shrink-0" />
               <address className="not-italic leading-relaxed">
-                Keshav Dham Rd, opp. Prem Dham,<br />
-                adjoining Sukhdham, Chaitanya Vihar,<br />
-                Vrindavan, Uttar Pradesh 281121
+                Keshav Dham Road,<br />
+                In front of Prem Mandir,<br />
+                Shri Vrindavan - 281121
               </address>
+            </div>
+            
+            {/* Registered Office */}
+            <div className="pt-4 border-t border-primary-foreground/10">
+              <p className="text-xs text-primary-foreground/60 font-medium mb-2">Founder & Operator</p>
+              <p className="text-xs text-primary-foreground/70 leading-relaxed">
+                Shri Giriraj Seva Sadan (Reg. - 82)<br />
+                Kothi No. 21, Green Avenue,<br />
+                Baranala – 148101
+              </p>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links & Map */}
           <div className="space-y-4">
             <h4 className="font-serif text-lg font-semibold">Quick Links</h4>
             <nav className="space-y-2">
@@ -141,13 +158,31 @@ const Footer = () => {
             </nav>
           </div>
         </div>
+
+        {/* Google Map for Baranala Headquarters */}
+        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
+          <h4 className="font-serif text-lg font-semibold mb-4 text-center">Registered Office - Baranala</h4>
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27539.76428287831!2d75.53686!3d30.37499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391019f9c29b0a1d%3A0x4ed7b61a9c9b0a1d!2sGreen%20Avenue%2C%20Barnala%2C%20Punjab%20148101!5e0!3m2!1sen!2sin!4v1706500000000!5m2!1sen!2sin"
+              width="100%"
+              height="250"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Shri Giriraj Seva Sadan - Baranala Headquarters"
+              className="w-full"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Copyright */}
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-4">
           <p className="text-center text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} Vindravan Shri Giriraj Sewa Sadan. All rights reserved.
+            © {new Date().getFullYear()} Shree Giriraj Sewa Sadan. All rights reserved.
           </p>
         </div>
       </div>
