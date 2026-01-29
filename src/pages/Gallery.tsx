@@ -10,6 +10,7 @@ interface Facility {
 }
 
 const facilities: Facility[] = [
+  // Trust Facilities
   {
     id: 1,
     name: 'Spacious Lawn Area',
@@ -34,6 +35,7 @@ const facilities: Facility[] = [
     description: 'Our well-maintained compound provides a safe and clean environment for families and groups. The entire premises is kept spotless for devotee comfort.',
     image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80',
   },
+  // Food Services
   {
     id: 5,
     name: 'Satvik Food Service',
@@ -46,40 +48,66 @@ const facilities: Facility[] = [
     description: 'Daily prasadam is offered to all guests as a sacred blessing. Experience the divine taste of food offered to the Lord with pure devotion.',
     image: 'https://images.unsplash.com/photo-1567337710282-00832b415979?w=600&q=80',
   },
+  // Room Types
   {
     id: 7,
-    name: 'Clean Accommodation Rooms',
-    description: 'Simple, clean, and comfortable rooms designed for restful sleep. Each room is regularly cleaned and maintained with fresh linens and basic amenities.',
+    name: 'Single Bed Non-AC Room',
+    description: 'A comfortable budget-friendly room with a single bed, ideal for solo travelers or sadhus seeking a simple and peaceful stay during their pilgrimage.',
     image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80',
   },
   {
     id: 8,
-    name: 'Common Sitting Area',
-    description: 'Comfortable common areas where devotees can gather, share spiritual experiences, and build connections with fellow pilgrims from across the country.',
-    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80',
+    name: 'Double Bed Non-AC Room',
+    description: 'Spacious non-AC room with a comfortable double bed and attached bathroom. Perfect for couples or small families on a budget pilgrimage.',
+    image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600&q=80',
   },
   {
     id: 9,
-    name: 'Water & Refreshment Station',
-    description: 'Clean drinking water and refreshments available 24/7. Stay hydrated during your pilgrimage with purified RO water at multiple points.',
-    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80',
+    name: 'Triple Bed Non-AC Room',
+    description: 'Ideal for families or groups of three, this room features three single beds with essential amenities for a comfortable non-AC stay.',
+    image: 'https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=600&q=80',
   },
   {
     id: 10,
+    name: 'Double Bed AC Room',
+    description: 'Premium air-conditioned room with a comfortable double bed, modern amenities, and a peaceful ambiance for couples seeking extra comfort.',
+    image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80',
+  },
+  {
+    id: 11,
+    name: 'Triple Bed AC Room',
+    description: 'Air-conditioned room with three beds, perfect for small families or groups who want cooling comfort during the warm Vrindavan summers.',
+    image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80',
+  },
+  {
+    id: 12,
+    name: 'Deluxe AC Room',
+    description: 'Our finest AC room featuring a king-size bed, premium furnishings, and all modern comforts for a luxurious and rejuvenating spiritual stay.',
+    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
+  },
+  {
+    id: 13,
+    name: 'Family Suite (4-5 Persons)',
+    description: 'A spacious family room with one double bed and two single beds, designed to accommodate 4-5 family members comfortably under one roof.',
+    image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80',
+  },
+  {
+    id: 14,
+    name: 'Dormitory (6-8 Persons)',
+    description: 'Budget-friendly dormitory-style accommodation with bunk beds, perfect for large groups, pilgrimage parties, or devotees seeking economical stays.',
+    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80',
+  },
+  // Other Facilities
+  {
+    id: 15,
     name: 'Reception & Assistance',
     description: 'Friendly staff available round the clock to assist with bookings, local guidance, temple timings, and any help you need during your spiritual journey.',
     image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80',
   },
   {
-    id: 11,
-    name: 'Morning Aarti Space',
-    description: 'Dedicated space for morning and evening aarti where devotees can participate in daily prayers and experience the divine atmosphere of Vrindavan.',
-    image: 'https://images.unsplash.com/photo-1609619385002-f40f1df9b7eb?w=600&q=80',
-  },
-  {
-    id: 12,
-    name: 'Family-Friendly Environment',
-    description: 'A welcoming atmosphere suitable for families with children and elderly members. Our trust ensures everyone feels at home during their pilgrimage.',
+    id: 16,
+    name: 'Common Sitting Area',
+    description: 'Comfortable common areas where devotees can gather, share spiritual experiences, and build connections with fellow pilgrims from across the country.',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
   },
 ];
