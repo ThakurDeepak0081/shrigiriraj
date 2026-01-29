@@ -67,18 +67,29 @@ const Services = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-secondary to-background">
-        <div className="container mx-auto px-4">
+      {/* Hero Section with Reception Background */}
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80"
+            alt="Reception area"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10 py-32">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block text-primary font-medium text-sm uppercase tracking-widest mb-4">
+            <span className="inline-block text-white/90 font-medium text-sm uppercase tracking-widest mb-4 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
               Our Services
             </span>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-shadow-lg">
               Seva with Devotion
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary via-spiritual-green to-primary mx-auto rounded-full mb-8" />
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <div className="w-24 h-1 bg-gradient-to-r from-white/50 via-white to-white/50 mx-auto rounded-full mb-8" />
+            <p className="text-lg text-white/90 leading-relaxed max-w-2xl mx-auto">
               At Vindravan Shri Giriraj Sewa Sadan Trust, we offer more than just accommodation. 
               We provide a complete spiritual hospitality experience — from comfortable rooms 
               to nourishing satvik meals — all designed to make your pilgrimage peaceful and memorable.
