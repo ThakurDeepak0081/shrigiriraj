@@ -81,11 +81,11 @@ const Footer = () => {
                 <span>+91 99276 00029</span>
               </a>
               <a
-                href="mailto:girirajsewasadan@gmail.com"
+                href="mailto:shreegirirajsewasadan@gmail.com"
                 className="flex items-start gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors"
               >
                 <Mail size={16} className="mt-0.5 flex-shrink-0" />
-                <span>girirajsewasadan@gmail.com</span>
+                <span>shreegirirajsewasadan@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-sm text-primary-foreground/80">
                 <Clock size={16} className="mt-0.5 flex-shrink-0" />
