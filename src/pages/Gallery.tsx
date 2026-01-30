@@ -186,7 +186,7 @@ const Gallery = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`https://wa.me/919809802980?text=${encodeURIComponent("Jai Shri Krishna! I would like to know more about booking a room at Vindravan Shri Giriraj Sewa Sadan Trust.")}`}
+                href={`https://wa.me/919927600017?text=${encodeURIComponent("Jai Shri Krishna! I would like to know more about booking a room at Shree Giriraj Sewa Sadan.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -198,7 +198,7 @@ const Gallery = () => {
                   WhatsApp Us
                 </Button>
               </a>
-              <a href="tel:+919809802980">
+              <a href="tel:+919927600017">
                 <Button
                   size="lg"
                   className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 w-full sm:w-auto"

@@ -110,18 +110,29 @@ const Contact = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-secondary">
-        <div className="container mx-auto px-4">
+      {/* Hero Section with Reception Background */}
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80"
+            alt="Reception area"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10 py-32">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block text-spiritual-red font-medium text-sm uppercase tracking-wider mb-3">
+            <span className="inline-block text-white/90 font-medium text-sm uppercase tracking-widest mb-4 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
               Get In Touch
             </span>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-shadow-lg">
               Contact Us
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-spiritual-red via-spiritual-yellow to-spiritual-red mx-auto rounded-full mb-6" />
-            <p className="text-lg text-muted-foreground">
+            <div className="w-24 h-1 bg-gradient-to-r from-white/50 via-white to-white/50 mx-auto rounded-full mb-8" />
+            <p className="text-lg text-white/90 leading-relaxed max-w-2xl mx-auto">
               Have questions or ready to book? Reach out to us and we'll respond 
               as quickly as possible to help you plan your spiritual stay.
             </p>
@@ -148,9 +159,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Address</h3>
                       <address className="not-italic text-muted-foreground leading-relaxed">
-                        Keshav Dham Rd, opp. Prem Dham,<br />
-                        adjoining Sukhdham, Chaitanya Vihar,<br />
-                        Vrindavan, Uttar Pradesh 281121
+                        Keshav Dham Road,<br />
+                        In front of Prem Mandir,<br />
+                        Shri Vrindavan - 281121
                       </address>
                     </div>
                   </div>
@@ -163,11 +174,14 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Phone Numbers</h3>
                       <div className="space-y-1">
-                        <a href="tel:+919809802980" className="block text-muted-foreground hover:text-primary transition-colors">
-                          +91 98098 02980
+                        <a href="tel:+919927600017" className="block text-muted-foreground hover:text-primary transition-colors">
+                          +91 99276 00017
                         </a>
-                        <a href="tel:+918955807505" className="block text-muted-foreground hover:text-primary transition-colors">
-                          +91 89558 07505
+                        <a href="tel:+919927600019" className="block text-muted-foreground hover:text-primary transition-colors">
+                          +91 99276 00019
+                        </a>
+                        <a href="tel:+919927600029" className="block text-muted-foreground hover:text-primary transition-colors">
+                          +91 99276 00029
                         </a>
                       </div>
                     </div>
@@ -180,8 +194,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                      <a href="mailto:contact@girirajsewasadan.com" className="text-muted-foreground hover:text-primary transition-colors">
-                        contact@girirajsewasadan.com
+                      <a href="mailto:girirajsewasadan@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                        girirajsewasadan@gmail.com
                       </a>
                     </div>
                   </div>
@@ -209,7 +223,7 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-3">
                   <a
-                    href="https://wa.me/919809802980"
+                    href="https://wa.me/919927600017"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
@@ -219,7 +233,7 @@ const Contact = () => {
                       WhatsApp Us
                     </Button>
                   </a>
-                  <a href="tel:+919809802980" className="block">
+                  <a href="tel:+919927600017" className="block">
                     <Button variant="outline" className="w-full">
                       <Phone className="w-5 h-5 mr-2" />
                       Call Now
