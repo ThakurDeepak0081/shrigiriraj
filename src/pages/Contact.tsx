@@ -75,11 +75,32 @@ const Contact = () => {
         inquirySchema.parse(dataToValidate);
       }
 
-      // Simulate form submission
+      // Build WhatsApp message with all form details
+      let whatsappMessage = `🙏 Jai Shri Krishna!\n\n`;
+      whatsappMessage += `*${subject === 'booking' ? 'Booking Inquiry' : 'General Inquiry'}*\n\n`;
+      whatsappMessage += `*Name:* ${formData.name}\n`;
+      whatsappMessage += `*Email:* ${formData.email}\n`;
+      whatsappMessage += `*Phone:* ${formData.phone}\n`;
+      
+      if (subject === 'booking') {
+        whatsappMessage += `*Duration of Stay:* ${formData.duration}\n`;
+        whatsappMessage += `*Number of Guests:* ${formData.guests}\n`;
+        whatsappMessage += `*Preferred Room Type:* ${formData.roomType}\n`;
+      }
+      
+      if (formData.message) {
+        whatsappMessage += `\n*Message:*\n${formData.message}`;
+      }
+
+      // Open WhatsApp with the message
+      const whatsappUrl = `https://wa.me/919927600017?text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappUrl, '_blank');
+
+      // Show success state
       setIsSubmitted(true);
       toast({
-        title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours.",
+        title: "Redirecting to WhatsApp!",
+        description: "Your message details have been prepared for WhatsApp.",
       });
     } catch (error) {
       if (error instanceof z.ZodError) {
