@@ -62,7 +62,7 @@ const trustHighlights = [
 
 const Services = () => {
   const whatsappMessage = encodeURIComponent(
-    "Jai Shri Krishna! I would like to know more about the services at Vindravan Shri Giriraj Sewa Sadan Trust."
+    "Jai Shri Krishna! I would like to know more about the services at Shree Giriraj Sewa Sadan."
   );
 
   return (
@@ -210,14 +210,14 @@ const Services = () => {
               Ready for Your Spiritual Journey?
             </h2>
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-              Book your stay at Vindravan Shri Giriraj Sewa Sadan and experience 
+              Book your stay at Shree Giriraj Sewa Sadan and experience 
               divine hospitality in the heart of Vrindavan.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`https://wa.me/919809802980?text=${whatsappMessage}`}
+                href={`https://wa.me/919927600017?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -228,7 +228,7 @@ const Services = () => {
                   WhatsApp Booking
                 </Button>
               </a>
-              <a href="tel:+919809802980">
+              <a href="tel:+919927600017">
                 <Button
                   size="lg"
                   className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 w-full sm:w-auto"
@@ -237,7 +237,7 @@ const Services = () => {
                   Call Now
                 </Button>
               </a>
-              <a href="mailto:contact@girirajsewasadan.com">
+              <a href="mailto:girirajsewasadan@gmail.com">
                 <Button
                   size="lg"
                   variant="outline"
@@ -253,18 +253,25 @@ const Services = () => {
               <p className="text-primary-foreground/70 mb-4">Or reach us directly:</p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <a
-                  href="tel:+919809802980"
+                  href="tel:+919927600017"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
                   <Phone size={18} />
-                  <span>+91 98098 02980</span>
+                  <span>+91 99276 00017</span>
                 </a>
                 <a
-                  href="tel:+918955807505"
+                  href="tel:+919927600019"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
                   <Phone size={18} />
-                  <span>+91 89558 07505</span>
+                  <span>+91 99276 00019</span>
+                </a>
+                <a
+                  href="tel:+919927600029"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <Phone size={18} />
+                  <span>+91 99276 00029</span>
                 </a>
               </div>
             </div>

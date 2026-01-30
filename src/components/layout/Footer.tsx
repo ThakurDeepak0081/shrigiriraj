@@ -106,18 +106,23 @@ const Footer = () => {
               </address>
             </div>
             
-            {/* Registered Office */}
+            {/* Registered Office - Clickable to open map */}
             <div className="pt-4 border-t border-primary-foreground/10">
               <p className="text-xs text-primary-foreground/60 font-medium mb-2">Founder & Operator</p>
-              <p className="text-xs text-primary-foreground/70 leading-relaxed">
+              <a
+                href="https://www.google.com/maps/search/Kothi+No+21+Green+Avenue+Barnala+148101"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-xs text-primary-foreground/70 leading-relaxed hover:text-accent transition-colors cursor-pointer"
+              >
                 Shri Giriraj Seva Sadan (Reg. - 82)<br />
                 Kothi No. 21, Green Avenue,<br />
                 Baranala – 148101
-              </p>
+              </a>
             </div>
           </div>
 
-          {/* Quick Links & Map */}
+          {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="font-serif text-lg font-semibold">Quick Links</h4>
             <nav className="space-y-2">
@@ -159,23 +164,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Google Map for Baranala Headquarters */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
-          <h4 className="font-serif text-lg font-semibold mb-4 text-center">Registered Office - Baranala</h4>
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27539.76428287831!2d75.53686!3d30.37499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391019f9c29b0a1d%3A0x4ed7b61a9c9b0a1d!2sGreen%20Avenue%2C%20Barnala%2C%20Punjab%20148101!5e0!3m2!1sen!2sin!4v1706500000000!5m2!1sen!2sin"
-              width="100%"
-              height="250"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Shri Giriraj Seva Sadan - Baranala Headquarters"
-              className="w-full"
-            />
-          </div>
-        </div>
       </div>
 
       {/* Copyright */}
