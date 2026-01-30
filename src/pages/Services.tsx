@@ -237,7 +237,7 @@ const Services = () => {
                   Call Now
                 </Button>
               </a>
-              <a href="mailto:girirajsewasadan@gmail.com">
+              <a href="mailto:shreegirirajsewasadan@gmail.com">
                 <Button
                   size="lg"
                   variant="outline"
